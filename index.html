@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/Style.css" />
+
+  <!-- Theme JS -->
+  <script src="js/theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#Cover">
+          <img src="./img/My_img.jpeg" alt="Sherien Ayed" />
+          <span>Sherien</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#About">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Skills">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Services</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- Theme -->
+            <li class="nav-item">
+              <button
+                id="themeToggle"
+                class="theme-btn"
+                aria-label="Toggle dark mode"
+              >
+                <i class="fa-solid fa-moon"></i>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ================= COVER ================= -->
+
+  <section id="Cover" class="cover-section">
+
+    <div class="container">
+
+      <div class="row align-items-center min-vh-100 g-5">
+
+        <!-- Content -->
+        <div class="col-12 col-lg-7">
+
+          <div class="cover-content">
+
+            <p class="hello">
+              <i class="fa-solid fa-hand"></i>
+              Hello, I'm
+            </p>
+
+            <h1>
+              Sherien <span>Ayed</span>
+            </h1>
+
+            <h2>
+              Full Stack Developer
+              <span>|</span>
+              ASP.NET Core Developer
+            </h2>
+
+            <p class="cover-description">
+              Building scalable and secure full-stack web applications with
+              ASP.NET Core and modern front-end technologies.
+            </p>
+
+            <!-- Buttons -->
+            <div class="cover-buttons">
+
+              <a
+                href="file/Sherien_Ayed CV.pdf"
+                class="btn-main"
+                target="_blank"
+                download
+              >
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download CV
+              </a>
+
+              <a
+                href="file/Sherien_Ayed CV.pdf"
+                class="btn-outline"
+                target="_blank"
+              >
+                <i class="fa-solid fa-file-lines"></i>
+                View CV
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Profile -->
+        <div class="col-12 col-lg-5">
+
+          <div class="profile-wrapper">
+
+            <div class="profile-circle">
+              <img
+                src="./img/My_img.jpeg"
+                alt="Sherien Ayed"
+              />
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+
+              <a
+                href="https://www.linkedin.com/in/sherien-ayed-8a661a31b"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://github.com/sherreen1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://codeforces.com/profile/Sherien12345-"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Codeforces"
+              >
+                <i class="fa-solid fa-code"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="About" class="about-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Me</h2>
+        <span class="title-line"></span>
+      </div>
+
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-12 col-lg-5">
+
+          <div class="about-visual">
+
+            <div class="about-glow"></div>
+
+            <div class="about-orbit"></div>
+
+            <div class="about-photo">
+              <div class="photo-border">
+                <img
+                  src="./img/My_img.jpeg"
+                  alt="Sherien Ayed"
+                />
+              </div>
+            </div>
+
+            <div class="floating-icon icon-code">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="floating-icon icon-web">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Content -->
+        <div class="col-12 col-lg-7">
+
+          <div class="about-content">
+
+            <span class="about-label">
+              Full Stack Developer
+            </span>
+
+            <h3>
+              Building
+              <span>modern digital solutions.</span>
+            </h3>
+
+            <p>
+              I'm Sherien Ayed, a Computer Science graduate and Full Stack
+              Developer specializing in ASP.NET Core and modern Front-End
+              development.
+            </p>
+
+            <p>
+              I build secure, scalable, and responsive web applications using
+              ASP.NET Core, React, JavaScript, SQL Server, and modern
+              development practices.
+            </p>
+
+            <div class="about-button">
+              <a href="#Contact" class="btn-main">
+                <i class="fa-solid fa-paper-plane"></i>
+                Connect Me
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="Skills" class="section skills-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>My Skills</h2>
+        <span class="title-line"></span>
+        <p>Technologies and skills I have learned so far.</p>
+      </div>
+
+
+      <div class="skills-grid">
+
+        <!-- HTML5 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+          </div>
+          <h3>HTML5</h3>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+          </div>
+          <h3>CSS3</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+          </div>
+          <h3>React</h3>
+        </div>
+
+        <!-- Angular -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+              alt="Angular"
+            />
+          </div>
+          <h3>Angular</h3>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+            />
+          </div>
+          <h3>Bootstrap</h3>
+        </div>
+
+        <!-- C# -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+              alt="C#"
+            />
+          </div>
+          <h3>C#</h3>
+        </div>
+
+        <!-- .NET -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+              alt=".NET"
+            />
+          </div>
+          <h3>.NET</h3>
+        </div>
+
+        <!-- ASP.NET Core -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h3>ASP.NET Core</h3>
+        </div>
+
+        <!-- Entity Framework Core -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Entity Framework Core</h3>
+        </div>
+
+        <!-- SQL Server -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              alt="SQL Server"
+            />
+          </div>
+          <h3>SQL Server</h3>
+        </div>
+
+        <!-- REST API -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>REST API</h3>
+        </div>
+
+        <!-- SignalR -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-tower-broadcast"></i>
+          </div>
+          <h3>SignalR</h3>
+        </div>
+
+        <!-- Redis -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>Redis</h3>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+          </div>
+          <h3>Git</h3>
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+        </div>
+
+        <!-- LINQ -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <h3>LINQ</h3>
+        </div>
+
+        <!-- Clean Architecture -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-sitemap"></i>
+          </div>
+          <h3>Clean Architecture</h3>
+        </div>
+
+        <!-- SOLID -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h3>SOLID Principles</h3>
+        </div>
+
+        <!-- Design Patterns -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+          <h3>Design Patterns</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+
+  <section id="Services" class="section services-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <span class="title-line"></span>
+        <p>What I can build for you</p>
+      </div>
+
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Service 01 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="service-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <h3>Full Stack Development</h3>
+
+            <p>
+              Building scalable and secure web applications using
+              ASP.NET Core, React, and SQL Server.
+            </p>
+
+            <div class="service-tech">
+              <span>ASP.NET Core</span>
+              <span>React</span>
+              <span>SQL Server</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Service 02 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="service-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+            <h3>Front-End Development</h3>
+
+            <p>
+              Creating modern, responsive, and user-friendly interfaces
+              with clean and maintainable code.
+            </p>
+
+            <div class="service-tech">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Bootstrap</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Service 03 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="service-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+
+            <h3>Backend &amp; API Development</h3>
+
+            <p>
+              Developing secure RESTful APIs and reliable backend systems
+              with authentication and database integration.
+            </p>
+
+            <div class="service-tech">
+              <span>Web API</span>
+              <span>EF Core</span>
+              <span>SQL Server</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="Projects" class="section section-alt">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <span class="title-line"></span>
+        <p>Some of the projects I have worked on</p>
+      </div>
+
+
+      <div class="row g-4">
+
+        <!-- ================= HERAFY ================= -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="project-card">
+
+            <div class="project-image">
+
+              <img
+                src="./img/herafy.png"
+                alt="Herafy Home Maintenance Services System"
+              />
+
+              <span class="project-type">
+                Full Stack
+              </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Graduation Project</span>
+                <span>2026</span>
+              </div>
+
+              <h3>Herafy</h3>
+
+              <p>
+                A scalable home maintenance services platform connecting
+                clients with verified technicians through secure and
+                intelligent service matching.
+              </p>
+
+              <div class="project-tags">
+                <span>ASP.NET Core</span>
+                <span>Web API</span>
+                <span>SQL Server</span>
+                <span>SignalR</span>
+                <span>Redis</span>
+              </div>
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/sherreen1/Herafy.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn github-btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= ONS ================= -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="project-card">
+
+            <div class="project-image">
+
+              <img
+                src="./img/ons.png"
+                alt="ONS Mental Health Platform"
+              />
+
+              <span class="project-type">
+                Full Stack
+              </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>DEPI Project</span>
+                <span>2025</span>
+              </div>
+
+              <h3>ONS Mental Health Platform</h3>
+
+              <p>
+                A secure mental health platform that enables patients to
+                book online therapy sessions with privacy and reliable
+                backend services.
+              </p>
+
+              <div class="project-tags">
+                <span>.NET 8</span>
+                <span>Web API</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+              </div>
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/sherreen1/OnsMentalHealth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn github-btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= REMOFLOWERY ================= -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="project-card">
+
+            <div class="project-image">
+
+              <img
+                src="./img/remoflowery.png"
+                alt="RemoFlowery Flower Store"
+              />
+
+              <span class="project-type">
+                Front-End
+              </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Web Development</span>
+                <span>2024</span>
+              </div>
+
+              <h3>RemoFlowery</h3>
+
+              <p>
+                A responsive flower store website featuring a modern layout,
+                reusable UI sections, animations, and a user-friendly design.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/sherreen1/RemoFlowery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn github-btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://sherreen1.github.io/RemoFlowery/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn live-btn"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= COFFEE ================= -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="project-card">
+
+            <div class="project-image">
+
+              <img
+                src="./img/Beanly.png"
+                alt="Coffee Website"
+              />
+
+              <span class="project-type">
+                Front-End
+              </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Web Development</span>
+                <span>2025</span>
+              </div>
+
+              <h3>Coffee Website</h3>
+
+              <p>
+                A modern responsive coffee shop website designed with a clean
+                layout, attractive sections, and a smooth user experience.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/sherreen1/beanly-cafe.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn github-btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://sherreen1.github.io/beanly-cafe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn live-btn"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PORTFOLIO ================= -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="project-card">
+
+            <div class="project-image">
+
+              <img
+                src="./img/portfolio.png"
+                alt="Sherien Ayed Portfolio"
+              />
+
+              <span class="project-type">
+                Front-End
+              </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Personal Project</span>
+                <span>2026</span>
+              </div>
+
+              <h3>Personal Portfolio</h3>
+
+              <p>
+                A modern responsive portfolio website showcasing my skills,
+                services, projects, and professional experience.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/sherreen1/Portfolio.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn github-btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://sherreen1.github.io/Portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn live-btn"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="Contact" class="contact-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Connect With Me</h2>
+        <span class="title-line"></span>
+        <p>Have a project or an opportunity in mind?</p>
+      </div>
+
+
+      <div class="contact-box">
+
+        <div class="row align-items-center g-5">
+
+          <!-- Intro -->
+          <div class="col-12 col-lg-6">
+
+            <div class="contact-content">
+
+              <span class="contact-label">
+                Let's work together
+              </span>
+
+              <h2>
+                Have a project
+                <span>in mind?</span>
+              </h2>
+
+              <p>
+                I'm always open to discussing new projects, creative ideas,
+                freelance opportunities, and collaborations.
+              </p>
+
+              <a
+                href="mailto:sherienayed12345@gmail.com"
+                class="contact-main-btn"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                Get In Touch
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-6">
+
+            <div class="contact-info">
+
+              <!-- Email -->
+              <a
+                href="mailto:sherienayed12345@gmail.com"
+                class="contact-item"
+              >
+
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                  <span>Email</span>
+                  <strong>sherienayed12345@gmail.com</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+              </a>
+
+
+              <!-- Phone -->
+              <a
+                href="tel:+201024849699"
+                class="contact-item"
+              >
+
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                  <span>Phone</span>
+                  <strong>+20 102 484 9699</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+              </a>
+
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/sherien-ayed-8a661a31b"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+              >
+
+                <div class="contact-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div>
+                  <span>LinkedIn</span>
+                  <strong>Let's connect on LinkedIn</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+              </a>
+
+
+              <!-- GitHub -->
+              <a
+                href="https://github.com/sherreen1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+              >
+
+                <div class="contact-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+
+                <div>
+                  <span>GitHub</span>
+                  <strong>View my projects</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2026 Sherien Ayed. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
