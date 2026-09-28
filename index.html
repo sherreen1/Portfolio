@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg">
           <!-- Logo -->
           <a class="navbar-brand logo" href="#Cover">
-            <img src="./img/My_img.jpeg" alt="Sherien Ayed" />
+            <img src="./img/Logo.png" alt="Sherien Ayed" />
             <span>Sherien</span>
           </a>
 
@@ -57,15 +57,8 @@
 
               <li class="nav-item">
                 <a class="nav-link" href="#Skills">
-                  <i class="fa-solid fa-laptop-code"></i>
+                  <i class="fa-solid fa-code"></i>
                   <span>Skills</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#Services">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span>Services</span>
                 </a>
               </li>
 
@@ -73,6 +66,13 @@
                 <a class="nav-link" href="#Projects">
                   <i class="fa-solid fa-folder-open"></i>
                   <span>Projects</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#Services">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>Services</span>
                 </a>
               </li>
 
@@ -114,10 +114,8 @@
 
               <h1>Sherien <span>Ayed</span></h1>
 
-              <h2>
-                Full Stack Developer
-                <span>|</span>
-                ASP.NET Core Developer
+              <h2 class="typing-title">
+                <span id="typing-text"></span><span class="cursor">|</span>
               </h2>
 
               <p class="cover-description">
@@ -176,13 +174,8 @@
                   <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a
-                  href="https://codeforces.com/profile/Sherien12345-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Codeforces"
-                >
-                  <i class="fa-solid fa-code"></i>
+                <a href="mailto:sherienayed0@gmail.com" aria-label="Email">
+                  <i class="fa-regular fa-envelope"></i>
                 </a>
               </div>
             </div>
@@ -259,13 +252,12 @@
     </section>
 
     <!-- ================= SKILLS ================= -->
-
     <section id="Skills" class="section skills-section">
       <div class="container">
         <div class="section-title">
           <h2>My Skills</h2>
           <span class="title-line"></span>
-          <p>Technologies and skills I have learned so far.</p>
+          <p>Tools and technologies I use to build production software.</p>
         </div>
 
         <div class="skills-grid">
@@ -302,6 +294,28 @@
             <h3>JavaScript</h3>
           </div>
 
+          <!-- Bootstrap -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap"
+              />
+            </div>
+            <h3>Bootstrap</h3>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS"
+              />
+            </div>
+            <h3>Tailwind CSS</h3>
+          </div>
+
           <!-- React -->
           <div class="skill-card">
             <div class="skill-icon">
@@ -322,17 +336,6 @@
               />
             </div>
             <h3>Angular</h3>
-          </div>
-
-          <!-- Bootstrap -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                alt="Bootstrap"
-              />
-            </div>
-            <h3>Bootstrap</h3>
           </div>
 
           <!-- C# -->
@@ -384,28 +387,12 @@
             <h3>SQL Server</h3>
           </div>
 
-          <!-- REST API -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3>REST API</h3>
-          </div>
-
           <!-- SignalR -->
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fa-solid fa-tower-broadcast"></i>
             </div>
             <h3>SignalR</h3>
-          </div>
-
-          <!-- Redis -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-            <h3>Redis</h3>
           </div>
 
           <!-- Git -->
@@ -426,124 +413,6 @@
             </div>
             <h3>GitHub</h3>
           </div>
-
-          <!-- LINQ -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-filter"></i>
-            </div>
-            <h3>LINQ</h3>
-          </div>
-
-          <!-- Clean Architecture -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-sitemap"></i>
-            </div>
-            <h3>Clean Architecture</h3>
-          </div>
-
-          <!-- SOLID -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-cubes"></i>
-            </div>
-            <h3>SOLID Principles</h3>
-          </div>
-
-          <!-- Design Patterns -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-puzzle-piece"></i>
-            </div>
-            <h3>Design Patterns</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SERVICES ================= -->
-
-    <section id="Services" class="section services-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Services</h2>
-          <span class="title-line"></span>
-          <p>What I can build for you</p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <!-- Service 01 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-number">01</div>
-
-              <div class="service-icon">
-                <i class="fa-solid fa-layer-group"></i>
-              </div>
-
-              <h3>Full Stack Development</h3>
-
-              <p>
-                Building scalable and secure web applications using ASP.NET
-                Core, React, and SQL Server.
-              </p>
-
-              <div class="service-tech">
-                <span>ASP.NET Core</span>
-                <span>React</span>
-                <span>SQL Server</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 02 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-number">02</div>
-
-              <div class="service-icon">
-                <i class="fa-solid fa-laptop-code"></i>
-              </div>
-
-              <h3>Front-End Development</h3>
-
-              <p>
-                Creating modern, responsive, and user-friendly interfaces with
-                clean and maintainable code.
-              </p>
-
-              <div class="service-tech">
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 03 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-number">03</div>
-
-              <div class="service-icon">
-                <i class="fa-solid fa-server"></i>
-              </div>
-
-              <h3>Backend &amp; API Development</h3>
-
-              <p>
-                Developing secure RESTful APIs and reliable backend systems with
-                authentication and database integration.
-              </p>
-
-              <div class="service-tech">
-                <span>Web API</span>
-                <span>EF Core</span>
-                <span>SQL Server</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -553,9 +422,9 @@
     <section id="Projects" class="section section-alt">
       <div class="container">
         <div class="section-title">
-          <h2>Featured Projects</h2>
+          <h2>Projects</h2>
           <span class="title-line"></span>
-          <p>Some of the projects I have worked on</p>
+          <p>Selected projects I’ve designed, built, and shipped.</p>
         </div>
 
         <div class="row g-4">
@@ -771,7 +640,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="project-card">
               <div class="project-image">
-                <img src="./img/portfolio.png" alt="Sherien Ayed Portfolio" />
+                <img src="./img/portfolio.jpg" alt="Sherien Ayed Portfolio" />
 
                 <span class="project-type"> Front-End </span>
               </div>
@@ -823,7 +692,91 @@
         </div>
       </div>
     </section>
+      <!-- ================= SERVICES ================= -->
 
+    <section id="Services" class="section services-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Services</h2>
+          <span class="title-line"></span>
+          <p>What I can build for you</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Service 01 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">01</div>
+
+              <div class="service-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+
+              <h3>Full Stack Development</h3>
+
+              <p>
+                Building scalable and secure web applications using ASP.NET
+                Core, React, and SQL Server.
+              </p>
+
+              <div class="service-tech">
+                <span>ASP.NET Core</span>
+                <span>React</span>
+                <span>SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">02</div>
+
+              <div class="service-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <h3>Front-End Development</h3>
+
+              <p>
+                Creating modern, responsive, and user-friendly interfaces with
+                clean and maintainable code.
+              </p>
+
+              <div class="service-tech">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">03</div>
+
+              <div class="service-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+
+              <h3>Backend &amp; API Development</h3>
+
+              <p>
+                Developing secure RESTful APIs and reliable backend systems with
+                authentication and database integration.
+              </p>
+
+              <div class="service-tech">
+                <span>Web API</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ================= CONTACT ================= -->
 
     <section id="Contact" class="contact-section">
@@ -875,7 +828,7 @@
 
                   <div>
                     <span>Email</span>
-                    <strong>sherienayed12345@gmail.com</strong>
+                    <strong>sherienayed0@gmail.com</strong>
                   </div>
 
                   <i

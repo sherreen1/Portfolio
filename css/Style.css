@@ -353,12 +353,9 @@ section {
 /* =====================================================
    MAIN TITLE
 ===================================================== */
-
 .cover-content h1 {
     font-size: clamp(45px, 7vw, 75px);
-
     font-weight: 800;
-
     margin-bottom: 15px;
 }
 
@@ -366,23 +363,46 @@ section {
     color: var(--primary);
 }
 
+/* Typing Text - Light Mode */
+.typing-title {
+    color: #0f172a !important;
+}
 
+#typing-text {
+    color: #0f172a !important;
+}
+
+/* Typing Text - Dark Mode */
+body.dark-mode .typing-title,
+body.dark-mode #typing-text {
+    color: #ffffff !important;
+}
+
+/* Cursor */
+.cursor {
+    color: var(--primary);
+}
 /* =====================================================
    SUB TITLE
 ===================================================== */
 
-.cover-content h2 {
-    font-size: clamp(20px, 3vw, 30px);
-
-    font-weight: 600;
-
-    margin-bottom: 20px;
+.typing-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8fafc;
 }
 
-.cover-content h2 span {
-    color: var(--primary);
+.cursor {
+  color: #06b6d4;
+  font-weight: 400;
+  animation: blink 0.7s infinite;
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 /* =====================================================
    DESCRIPTION
@@ -1395,25 +1415,35 @@ section {
 /* =====================================================
    PROJECTS
 ===================================================== */
-
 .project-card {
     height: 100%;
-
     background: var(--card);
-
     border: 1px solid var(--border);
-
     border-radius: 20px;
-
     overflow: hidden;
-
     position: relative;
 
+    /* Scroll Reveal */
+    opacity: 0;
+    transform: translateY(60px);
+
     transition:
-        transform 0.35s ease,
+        opacity 0.7s ease,
+        transform 0.7s ease,
         box-shadow 0.35s ease,
         border-color 0.35s ease;
 }
+
+
+/* ================= PROJECT REVEAL ================= */
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================= PROJECT HOVER ================= */
 
 .project-card:hover {
     transform: translateY(-8px);
@@ -1423,7 +1453,6 @@ section {
     box-shadow:
         0 18px 40px rgba(0, 0, 0, 0.08);
 }
-
 
 /* Project Image */
 
